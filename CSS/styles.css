@@ -13,10 +13,10 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-
+.nav-left{
+    display: flex;
+}
 .bot-nav{
-    width: 75px;
-    height: 20px;
     margin: 0px 10px;
     text-align: center;
     box-shadow: 2px 3px #154454;
@@ -37,32 +37,30 @@ nav{
 }
 
 .bot-nav:active{
-    transform: translate(2.5px, 2px);
+    transform: translate(3px, 2px);
     transition: 0s;
 }
 
 .bot-nav:active{
-    box-shadow: 0px 0px 10px;
-    transition: 0.1s;
+    box-shadow: 0px 0px 10px rgb(249, 255, 255);
 }
 
 /* LOGO */
 
 .svg-nav{
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 15px;
 }
 polyline#pac1{
     animation: part_1 ease-in 2s;
     animation-iteration-count: 1;
 }
-polyline#mon1, polyline#tec1{
+polyline#mon1, polyline#tec1, rect#m1, polygon#t1{
     animation: part_1 ease-in 4s;
     animation-iteration-count:1;
     }
     
-polyline#mon2,polyline#tec2 {
+polyline#mon2,polyline#tec2, rect#m2, polygon#t2 {
 animation: part_2 ease-in 4s  ;
 animation-iteration-count:1 ;
 }
@@ -106,7 +104,7 @@ animation-iteration-count:1 ;
 
 /* HEADER */
 header{
-    background: url(/assets/imagenes/codigo.jpeg) 50% 0 fixed;
+    background: url(../assets/imagenes/codigo.jpeg) 50% 0 fixed;
     background-size: cover;
     min-height: 300px;
     color: #e4f5f3;
@@ -180,18 +178,18 @@ h2{
     color: rgb(82, 82, 82);
     font-weight: bolder;
 }
-.boton-main:hover{
+.boton-main:hover, .botonesreproductor:hover{
     background-color: rgb(132, 172, 172);
     transition: 0.5s;
  
 }
 
-.boton-main:active{
+.boton-main:active, .botonesreproductor:active{
     transform: translate(2.5px, 2px);
     transition: 0s;
 }
 
-.boton-main:active{
+.boton-main:active, .botonesreproductor:active{
     box-shadow: 0px 0px 10px rgb(132, 172, 172);
     transition: 0.1s;
 }
@@ -208,6 +206,9 @@ footer{
     color: white;
 }
 
+.svg-foot{
+    margin: 5px -12px;
+}
 .foot-izq{
     display: flex;
     justify-content: space-between;
@@ -251,10 +252,81 @@ p{
     text-decoration: underline;
 }
 
-
+h3{
+    margin: 70px;
+    font-size: 40px;
+    color: rgb(235, 226, 214);
+    text-align: center;
+    text-shadow: 3px 3px black; 
+}
 article{
+    padding: 100px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
     align-content: center;
 }
+.Cont-reproductor{
+    width: 70%;
+    background-color: black;
+    padding: 5px;
+}
+video {
+    width: 100%;
+    object-fit: contain;
+}
+.barra{
+    background-color: rgb(54, 54, 54); 
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.botonera{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+.botonesreproductor{
+    background-color: #ffffff;
+    box-shadow: 2px 1px #627d86;
+    border-radius: 10px;
+    padding: 13px 15px;
+}
+
+.length{
+    padding-top: 30px;
+    padding-right: 60px;
+    color: #e4f5f3;
+}
+
+/* ------page3------ */
+main{
+     padding: 100px 20px;
+}
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    display: flex;
+
+}
+.caja1, .caja2, .caja3{
+    width: 275px;
+    height: 400px;
+    background-color: grey;
+    border: 2px solid black;
+}
+.img-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px;
+}
+#img-game1, #img-game2, #img-game3{
+    width: 275px;
+    height: 400px;
+} 
