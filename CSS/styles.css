@@ -178,18 +178,18 @@ h2{
     color: rgb(82, 82, 82);
     font-weight: bolder;
 }
-.boton-main:hover, .botonesreproductor:hover{
+.boton-main:hover, .botonesreproductor:hover, .rest:hover{
     background-color: rgb(132, 172, 172);
-    transition: 0.5s;
+    transition: 0.3s;
  
 }
 
-.boton-main:active, .botonesreproductor:active{
+.boton-main:active, .botonesreproductor:active, .rest:active{
     transform: translate(2.5px, 2px);
     transition: 0s;
 }
 
-.boton-main:active, .botonesreproductor:active{
+.boton-main:active, .botonesreproductor:active, .rest:active{
     box-shadow: 0px 0px 10px rgb(132, 172, 172);
     transition: 0.1s;
 }
@@ -242,7 +242,7 @@ footer{
 
 }
 
-p{
+.text-sect{
     width: 45%;
     font-weight: bolder;
     text-shadow: 2px white;
@@ -291,7 +291,8 @@ video {
     background-color: #ffffff;
     box-shadow: 2px 1px #627d86;
     border-radius: 10px;
-    padding: 13px 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.582);
+    padding: 13px 40px;
 }
 
 .length{
@@ -319,10 +320,14 @@ main{
     background-color: grey;
     border: 2px solid black;
 }
-.img-card{
+.text-caja{
+   color: #1f1f1f;
+   text-align: center;
+   font-weight: bolder;
+}
+.img-game{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 10px;
     margin: 40px;
 }
@@ -330,3 +335,13 @@ main{
     width: 275px;
     height: 400px;
 } 
+
+.rest{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px #0d2c37;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.347);
+    border-radius: 10px;
+    padding: 10px 5%;
+    font-weight: bolder;
+}
